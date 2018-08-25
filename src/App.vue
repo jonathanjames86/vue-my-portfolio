@@ -1,6 +1,6 @@
 <template>
   <v-app id="app">
-    <v-toolbar>
+    <v-toolbar flat>
       <v-toolbar-side-icon class="hidden-sm-and-up"></v-toolbar-side-icon>
       <v-toolbar-title>JP</v-toolbar-title>
       <v-spacer></v-spacer>
