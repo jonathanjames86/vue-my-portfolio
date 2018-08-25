@@ -1,20 +1,29 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <div id="navtab">
-        <router-link to="/">Logo</router-link>
-      </div>
-      <div id="navtab">
-        <router-link to="/about">About</router-link>
-      </div>
-    </div>
-    <router-view/>
-  </div>
+  <v-app id="app">
+    <v-toolbar>
+      <v-toolbar-side-icon class="hidden-sm-and-up"></v-toolbar-side-icon>
+      <v-toolbar-title>JP</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-toolbar-items class="hidden-xs-only">
+        <v-btn id="navtab" to="/" flat>Logo</v-btn>
+        <v-btn to="/about" flat>About</v-btn>
+      </v-toolbar-items>
+    </v-toolbar>
+    <v-container fluid>
+      <router-view/>
+    </v-container>
+    <Footer />
+  </v-app>
 </template>
 
 <script lang="ts">
   import Vue from 'vue';
-  export default Vue.extend();
+  import Footer from '@/components/Footer.vue'; // @ is an alias to /src
+  export default Vue.extend({
+        components: {
+        Footer,
+    },
+  });
 </script>
 
 <style>
@@ -31,6 +40,7 @@
     grid-template-columns: auto auto;
     text-align: left;
     padding: 15px;
+    text-decoration: none;
   }
   
   #nav a {

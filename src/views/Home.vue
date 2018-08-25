@@ -24,6 +24,9 @@ export default class Home extends Vue {}
 </script>
 
 <style scoped>
+.home {
+  min-height: 85vh;
+}
 #mugshot {
   border-radius: 50%;
   height: 35vh;

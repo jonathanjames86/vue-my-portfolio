@@ -1,8 +1,13 @@
+import '@babel/polyfill';
 import Vue from 'vue';
+import './plugins/vuetify';
+import 'material-design-icons-iconfont/dist/material-design-icons.css'; // Ensure you are using css-loader
 import App from './App.vue';
 import router from './router';
 import store from './store';
 import './registerServiceWorker';
+import Vuetify from 'vuetify';
+Vue.use(Vuetify);
 
 Vue.config.productionTip = false;
 
