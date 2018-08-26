@@ -2,7 +2,8 @@
   <v-app id="app">
     <v-toolbar flat>
       <v-toolbar-side-icon class="hidden-sm-and-up"></v-toolbar-side-icon>
-      <v-toolbar-title>JP</v-toolbar-title>
+      <v-toolbar-title class="display-1" style="color: #26A69A;">JP</v-toolbar-title>
+      <v-toolbar-title class="font-weight-light">Develper. Designer. Artist.</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-xs-only">
         <v-btn id="navtab" to="/" flat>Logo</v-btn>

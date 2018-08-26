@@ -1,5 +1,6 @@
 <template>
-   <v-footer
+  <v-footer
+    absolute="true"
     dark
     height="auto"
     app
@@ -11,6 +12,7 @@
     >
       <v-card-text>
         <v-btn
+          dark
           v-for="icon in icons"
           :key="icon"
           class="mx-3 white--text"
@@ -20,14 +22,8 @@
         </v-btn>
       </v-card-text>
 
-      <!-- <v-card-text class="white--text pt-0">
-        Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula lacinia malesuada. Nulla placerat augue vel ipsum ultrices, cursus iaculis dui sollicitudin. Vestibulum eu ipsum vel diam elementum tempor vel ut orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-      </v-card-text> -->
-
-      <v-divider></v-divider>
-
-      <v-card-text class="white--text">
-        &copy;2018 — <strong>Vuetify</strong>
+      <v-card-text class="white--text pt-0">
+        Feel free to reach out. I'm always happy to help.
       </v-card-text>
     </v-card>
   </v-footer>
@@ -40,11 +36,10 @@ export default Vue.extend({
   data() {
     return {
       icons: [
-        'fab fa-facebook',
         'fab fa-twitter',
         'fab fa-google-plus',
         'fab fa-linkedin',
-        'fab fa-instagram',
+        'fab fa-github',
       ],
     };
   },
@@ -52,5 +47,7 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-
+  .v-card {
+    width: 100%;
+  }
 </style>

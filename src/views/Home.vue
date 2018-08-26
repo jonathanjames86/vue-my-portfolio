@@ -1,13 +1,7 @@
 <template>
   <div class="home">
-    <h1></h1>
     <img id="mugshot" alt="mugshot" src="../assets/mugShot.jpg">
-    <div id="social-media">
-      <img class="svg" src="../assets/github.svg" alt="gitHub">
-      <img class="svg" src="../assets/linkedin.svg" alt="Kiwi standing on oval">
-      <img class="svg" src="../assets/twitter.svg" alt="Kiwi standing on oval">
-    </div>
-    <HomePage msg="Welcome to Your Vue.js + TypeScript App"/>
+    <HomePage msg="I'm James. And I like building things."/>
   </div>
 </template>
 
@@ -25,12 +19,12 @@ export default class Home extends Vue {}
 
 <style scoped>
 .home {
-  min-height: 85vh;
+  min-height: 95vh;
 }
 #mugshot {
   border-radius: 50%;
   height: 35vh;
-  margin: 2vh auto 0;
+  margin: 2vh auto;
 }
 
 #social-media {
